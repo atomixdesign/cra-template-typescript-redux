@@ -1,0 +1,25 @@
+{
+  "name": "cra-template-atomix-typescript-redux",
+  "version": "1.0.0",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "typescript"
+  ],
+  "description": "The atomix base TypeScript + Redux template for Create React App.",
+  "scripts": {
+    "test": "npx create-react-app test --template file:.",
+    "backport": "rsync -rtzc --info=progress2 --exclude=node_modules/ --exclude=.gitignore --exclude=package.json --exclude=yarn.lock ./test/ ./template",
+    "clean": "rm -rf test"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.10"
+  },
+  "main": "template.json",
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
